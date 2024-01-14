@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
 
     loop()
     println(max(1, 2))
+    println("doWhen function: ${doWhen(1)}")
 
     var baseClass = BaseClass("Fox", 11)
     println(baseClass.name)
@@ -38,4 +39,13 @@ fun loop() {
 
 fun max(a: Int, b: Int): Int {
     return if(a > b) a else b
+}
+
+fun doWhen(x: Int): Int = when (x) {
+    1 ->
+        x * 10
+    2 ->
+        x * 20
+    else ->
+        throw IllegalArgumentException("아무튼 이거는 안됨.")
 }
