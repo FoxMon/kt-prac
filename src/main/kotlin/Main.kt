@@ -21,6 +21,12 @@ fun main(args: Array<String>) {
 
     println(advancedCodeUser.name)
     println(advancedCodeUser.address)
+
+    var dt = DataStructure()
+
+    dt.put(Car("A", "A-1"))
+    var car = dt.getItem()
+    println("Car: ${car.name}")
 }
 
 fun loop() {
